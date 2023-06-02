@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="styles.css" />
+        <script src="./ajax.js"></script>
+    </head>
+    <body>
+            <h1>Student Details</h1>
+            <form method="post" name="myForm" id = 'myForm' class="registartion-form"  onsubmit="(e)=>e.preventDefault()">
+              <table>   
+                <tr>
+                    <td><label for="id">Id:</label></td>
+                    <td><input type="number" name="s_id" id="s_id" placeholder="your id"></td>
+                  </tr>
+                <tr>
+                  <td><label for="name">Name:</label></td>
+                  <td><input type="text" name="s_name" id="s_name" placeholder="your name"></td>
+                </tr>
+                <tr>
+                  <td><label for="email">Email:</label></td>
+                  <td><input type="text" name="s_email" id="s_email" placeholder="your email"></td>
+                </tr>
+                <tr>
+                  <td><label for="phoneNumber">Phone Number:</label></td>
+                  <td><input type="number" name="s_phonenumber" id="s_phonenumber"></td>
+                </tr>
+                <tr>
+                  <td><label for="gender">Gender:</label></td>
+                  <td>Male: <input type="radio" name="s_gender" id="s_gender" value="male">
+                    Female: <input type="radio" name="s_gender" id="s_gender" value="female">
+                    Other: <input type="radio" name="s_gender" id="s_gender" value="other"></td>
+                </tr>
+                <tr>
+                  <td><label for="language">language</label></td>
+                  <td>
+                    <select name="s_language" id="s_language">
+                      <option value="">Select language</option>
+                      <option value="English">English</option>
+                      <option value="Spanish">Spanish</option>
+                      <option value="Hindi">Hindi</option>
+                      <option value="Arabic">Arabic</option>
+                      <option value="Russian">Russian</option>
+                    </select>
+                  </td>
+                </tr>
+                <tr>
+                  <td><label for="zipcode">Zip Code:</label></td>
+                  <td><input type="number" name="zipcode" id="s_zipcode"></td>
+                </tr>
+                <tr>
+                  <td><input type="submit" id = 'send' value="send" > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                  <td><input type="submit" id = 'update' value="update" > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                  <td><input type="submit" id = 'delete' value="delete"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                </tr>
+              </table>
+            </form>
+            <br><br>
+            <button id = "getData">Get</button> 
+            <h4 style="color:red" id = op></h4>
+    </body>
+</html>
